@@ -1,0 +1,15 @@
+2014-02-10 16:30:16,453 root - CRITICAL - DONT DO THAT AGAIN
+2014-02-10 16:30:16,456 root - DEBUG - Something goes wrong
+2014-02-10 16:30:16,456 root - DEBUG - Something goes wrong
+2014-02-10 16:30:16,459 root - ERROR - An error goes here
+2014-02-10 16:30:16,459 root - ERROR - An error goes here
+2014-02-10 16:30:16,459 root - ERROR - An error goes here
+2014-02-10 16:30:16,462 root - INFO - Are you sure?
+2014-02-10 16:30:16,462 root - INFO - Are you sure?
+2014-02-10 16:30:16,462 root - INFO - Are you sure?
+2014-02-10 16:30:16,462 root - INFO - Are you sure?
+2014-02-10 16:30:16,464 root - WARNING - Checkout this warning
+2014-02-10 16:30:16,464 root - WARNING - Checkout this warning
+2014-02-10 16:30:16,464 root - WARNING - Checkout this warning
+2014-02-10 16:30:16,464 root - WARNING - Checkout this warning
+2014-02-10 16:30:16,464 root - WARNING - Checkout this warning
