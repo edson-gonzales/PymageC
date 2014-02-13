@@ -1,6 +1,7 @@
+
 import unittest
 import sys
-sys.path.append("../Source/Libs")
+sys.path.append("../source/libs")
 from FileManager import FileManager
 import os
 
@@ -17,44 +18,45 @@ class FileManagerTest(unittest.TestCase):
 
     def test_blist_image_from_path_return_a_list_with_images(self):
         
-        self.assertEquals(["920.jpg", "pregoneroOficial.jpg", "test.jpg", "test2.jpg", "programmer.jpg"], file_manager.list_image_from_path(self.current_path))
+        self.assertEquals(["pregoneroOficial.jpg", "apple.bmp", "tank.png", "test.jpg", "programmer.jpg", "bmp.bmp", "linux.png"], file_manager.list_image_from_path(self.current_path))
 
     def test_clist_image_from_path_return_a_list_with_images_with_three_matching_files_and_one_different(self):
         
-        folder = "/Input/MoreImages"
+        folder = "/input/moreimages"
         path = self.current_path + folder
-        self.assertEquals(["test.jpg", "test2.jpg", "programmer.jpg"], file_manager.list_image_from_path(path))
+        self.assertEquals(["test.jpg", "programmer.jpg", "bmp.bmp", "linux.png"], file_manager.list_image_from_path(path))
     
     def test_dlist_image_from_path_return_a_empty_list_when_no_images_exist(self):
         
-        folder="/Input/empty"
+        folder="/input/empty"
         path = self.current_path + folder
         self.assertEquals([], file_manager.list_image_from_path(path))    
 
     def test_everify_path_directory_exists_when_user_insert_a_valid_path(self):
         
-        self.assertEquals(self.current_path, file_manager.verify_path_directory_exists(self.current_path))
+        self.assertEquals(self.current_path, file_manager.directory_exists(self.current_path))
 
     def test_fverify_path_directory_exists_when_user_insert_an_invalid_path(self):
         
-        self.assertEquals("This is an invalid path",file_manager.verify_path_directory_exists("InvalidPath"))
+        self.assertEquals("This is an invalid path",file_manager.directory_exists("InvalidPath"))
 
     def test_gverify_image_exist_when_user_insert_an_existing_image(self):
         
-        folder = "/Input/920.jpg"
+        folder = "/input/tank.png"
         path_image = self.current_path + folder
-        self.assertEquals(path_image ,file_manager.verify_image_exist(path_image))		
+        self.assertTrue(file_manager.image_exists(path_image))		
 
     def test_hverify_image_exist_when_user_insert_an_unexisting_image(self):
         
-        image = "G:\Pymage Mario\PYMAGE C\Tests\Input\92.jpg"
-        self.assertEquals("This image doesnt exist" ,file_manager.verify_image_exist(image))
+        image = "/input/92.jpg"
+        path_image = self.current_path + image
+        self.assertEquals("This image doesnt exist" ,file_manager.image_exists(image))
     
     def test_iverify_image_exist_when_user_insert_an_unexisting_image(self):
         
-        txt_file = "/Input/MoreImages/readme.txt"
+        txt_file = "/input/moreimages/readme.txt"
         path_file = self.current_path + txt_file
-        self.assertEquals("This is not an image file", file_manager.verify_image_exist(path_file))
+        self.assertEquals("This is not an image file", file_manager.image_exists(path_file))
 
 if __name__ == "__main__":
     file_manager= FileManager()
