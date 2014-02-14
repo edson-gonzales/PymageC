@@ -11,7 +11,7 @@ class FileManager():
         Return:
         current_path.- String with the current path.
         """
-        current_path=os.getcwd()
+        current_path = os.getcwd()
         return current_path
 
     def list_image_from_path(self, current_path):
@@ -34,16 +34,6 @@ class FileManager():
                     list_image.append(image)
 
         return list_image           
-
-    def read_directory_from_user(self):
-        """
-        This method read a directory path inserted by the user.
-        Return:
-        path_directory.- String with the value inserted by the user
-        """
-        path_directory = raw_input("Insert a path directory to search images:")
-        path_directory = str(path_directory)
-        return path_directory
     
     def directory_exists(self, path_directory):
         """
@@ -56,9 +46,9 @@ class FileManager():
         else:
             return "This is an invalid path"
 
-    def image_exists(self, image_file):
+    def validate_type_of_image(self, image_file):
         """
-        This method verify if a image file exists
+        This method verify if a the image is supported by the application
         Parameters:
         image_file.- String with all the direction of an image file
                      Example:
@@ -69,9 +59,9 @@ class FileManager():
                 or image_file.endswith(".png")):
                 return True
             else: 
-                return "This is not an image file"
+                return False
         else:
-            return "This image doesnt exist"
+            return False
 
 
 

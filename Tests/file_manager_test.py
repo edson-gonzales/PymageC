@@ -44,22 +44,22 @@ class FileManagerTest(unittest.TestCase):
         
         folder = "/input/tank.png"
         path_image = self.current_path + folder
-        self.assertTrue(file_manager.image_exists(path_image))		
+        self.assertTrue(file_manager.validate_type_of_image(path_image))	
 
     def test_hverify_image_exist_when_user_insert_an_unexisting_image(self):
         
         image = "/input/92.jpg"
         path_image = self.current_path + image
-        self.assertEquals("This image doesnt exist" ,file_manager.image_exists(image))
+        self.assertFalse(file_manager.validate_type_of_image(image))
     
     def test_iverify_image_exist_when_user_insert_an_unexisting_image(self):
         
         txt_file = "/input/moreimages/readme.txt"
         path_file = self.current_path + txt_file
-        self.assertEquals("This is not an image file", file_manager.image_exists(path_file))
+        self.assertFalse(file_manager.validate_type_of_image(path_file))
 
 if __name__ == "__main__":
     file_manager= FileManager()
     unittest.main()
 
-    
+
