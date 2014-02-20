@@ -35,6 +35,28 @@ class FileManager():
 
         return list_image           
     
+    def list_image_sizes_from_path(self, current_path):
+        """
+        This method lists all the image sizes of a specific path
+        The list of the image sizes consider also the images within other directories
+        Only the images with the follwoing extension are listed: .jpg   .png   .bmp
+
+        Parameters:
+        current_path .- Path directory to find all the images
+        Return:
+        list_image.- List with all the image sizes of a specific path
+        """
+        list_image_sizes = []
+        for base, dirs, files in os.walk(current_path):
+            for image in files:
+                if (image.endswith(".jpg") == True or image.endswith(".png") == True 
+                    or image.endswith(".bmp") == True):
+                    image_name = base + "/" + image
+                    size = os.path.getsize(image_name)
+                    list_image_sizes.append(size)
+
+        return list_image_sizes
+
     def directory_exists(self, path_directory):
         """
         This method verify if a path directory given exists
@@ -62,8 +84,6 @@ class FileManager():
                 return False
         else:
             return False
-
-
 
 
     

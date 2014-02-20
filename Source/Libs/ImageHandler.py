@@ -57,8 +57,10 @@ class ImageHandler():
         input_values.- List with all the inputs inserted by the user
                        [Image path,  new format]
         """   
-        try:
+        
+        try:    
             new_image = os.path.splitext(input_values[0])[0] + "." + input_values[1]
             Image.open(input_values[0]).save(new_image)
         except:
             print "Error while processing the image"
+
