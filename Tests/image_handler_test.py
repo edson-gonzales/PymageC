@@ -5,7 +5,6 @@ sys.path.append("../source/libs")
 from ImageHandler import ImageHandler
 from FileManager import FileManager
 
-
 class ImageManagerTest(unittest.TestCase):
     
     def setUp(self):
@@ -104,7 +103,3 @@ class ImageManagerTest(unittest.TestCase):
         self.assertTrue(self.file_manager.validate_type_of_image(new_image), "The image was not exported to another format")
         os.remove(new_image)
 
-if __name__ == "__main__":
-    
-
-    unittest.main()

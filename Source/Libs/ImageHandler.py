@@ -1,3 +1,4 @@
+from constants import *
 from PIL import Image
 import os
 import sys
@@ -5,7 +6,7 @@ sys.path.append("..")
 from FileManager import FileManager
 
 class ImageHandler():
-	
+
     def validate_degrees_inserted(self, degrees):
         """
         This method evaluate the number of degrees to rotates an image
@@ -18,7 +19,6 @@ class ImageHandler():
             return True
         else: 
             return False
-
     
     def validate_format_inserted(self, new_format):
         """
@@ -28,7 +28,7 @@ class ImageHandler():
         True.- When the format is correct
         False.- When the format is incorrect or is not supported
         """
-        if (new_format == 'jpg' or new_format == 'bmp' or new_format == 'png'):
+        if new_format in types:
             return True
         else:
             return False
@@ -48,7 +48,6 @@ class ImageHandler():
         except:
             print "Error while processing the image"
         
-
     def export_an_image_file_to_another_format(self, input_values):
         """
         This method export an image file from one format to another.

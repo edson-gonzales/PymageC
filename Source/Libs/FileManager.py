@@ -1,9 +1,8 @@
-
+from constants import *
 import os
 
 class FileManager():
-
-
+   
     def get_current_path(self):
         """
         This method returns the current path directory
@@ -25,16 +24,37 @@ class FileManager():
         Return:
         list_image.- List with all the image names of a specific path
         """
+        
         list_image = []
         for base, dirs, files in os.walk(current_path):
             for image in files:
-                if (image.endswith(".jpg") == True or image.endswith(".png") == True 
-                    or image.endswith(".bmp") == True):
-                    
+                image_extension = image.split(".")[-1]
+                if image_extension in types:
                     list_image.append(image)
 
         return list_image           
     
+    def list_image_names_with_path_directory(self, current_path):
+        """
+        This method lists all the image files of a specific path
+        The list of the image files consider also the images within other directories
+        Only the images with the follwoing extension are listed: .jpg   .png   .bmp
+
+        Parameters:
+        current_path .- Path directory to find all the images
+        Return:
+        list_image.- List with all the image names of a specific path
+        """
+        list_image = []
+        for base, dirs, files in os.walk(current_path):
+            for image in files:
+                image_extension = image.split(".")[-1]
+                if image_extension in types:    
+                    image_name_with_path = base + "/" + image
+                    list_image.append(image_name_with_path)
+
+        return list_image
+
     def list_image_sizes_from_path(self, current_path):
         """
         This method lists all the image sizes of a specific path
@@ -44,13 +64,13 @@ class FileManager():
         Parameters:
         current_path .- Path directory to find all the images
         Return:
-        list_image.- List with all the image sizes of a specific path
+        list_image_size.- List with all the image sizes of a specific path
         """
         list_image_sizes = []
         for base, dirs, files in os.walk(current_path):
             for image in files:
-                if (image.endswith(".jpg") == True or image.endswith(".png") == True 
-                    or image.endswith(".bmp") == True):
+                image_extension = image.split(".")[-1]
+                if image_extension in types:
                     image_name = base + "/" + image
                     size = os.path.getsize(image_name)
                     list_image_sizes.append(size)
@@ -77,17 +97,10 @@ class FileManager():
                      G:\Pymage Mario\PYMAGE C\Tests\Input\920.jpg
         """
         if os.path.isfile(image_file):
-            if (image_file.endswith(".jpg") or image_file.endswith(".bmp") 
-                or image_file.endswith(".png")):
+            image_extension = image_file.split(".")[-1]
+            if image_extension in types:
                 return True
-            else: 
-                return False
-        else:
-            return False
-
-
-    
-
+        return False
 
 
 

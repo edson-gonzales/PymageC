@@ -1,3 +1,4 @@
+from constants import *
 import os
 import sys
 sys.path.append("..")
@@ -5,6 +6,7 @@ from FileManager import FileManager
 from SearchDuplicate import SearchDuplicate
 
 class SearchDuplicateByName(SearchDuplicate):
+    
     def search_duplicate(self, list_images):
         """
         This method search all the image name duplicatd an a given list.
@@ -19,7 +21,6 @@ class SearchDuplicateByName(SearchDuplicate):
         list_images_duplicated = list(seen_twice)
         return list_images_duplicated
 
-
     def extract_entire_path_of_each_image_duplicated(self, list_images_duplicated, path):
         """
         This method returns the entire path directory of each image sent in the 
@@ -33,11 +34,14 @@ class SearchDuplicateByName(SearchDuplicate):
         for image_duplicated in list_images_duplicated:
             for base, dirs, files in os.walk(path):
                 for image in files:
-                    if (image == image_duplicated):
-                        image_name_complete = base + "/" + image
-                        list_images_duplicated_with_paths.append(image_name_complete)
+                    image_extension = image.split(".")[-1]
+                    if image_extension in types:
+                        if (image == image_duplicated):
+                            image_name_complete = base + "/" + image
+                            list_images_duplicated_with_paths.append(image_name_complete)
         return list_images_duplicated_with_paths
 
+        
 
 
 

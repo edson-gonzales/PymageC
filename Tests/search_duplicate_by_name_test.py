@@ -37,6 +37,3 @@ class SearchDuplicateByNameTest(unittest.TestCase):
         list_images_duplicated = self.search_by_name.search_duplicate(list_images)
         self.assertEquals(0,len(self.search_by_name.extract_entire_path_of_each_image_duplicated(list_images_duplicated, path_directory)))
 
-if __name__ == "__main__":
-    
-    unittest.main()
