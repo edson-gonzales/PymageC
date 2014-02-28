@@ -1,0 +1,208 @@
+2014-02-27 22:53:00,894 root - WARNING - Image is not supported
+2014-02-27 22:53:00,897 root - WARNING - Image is not supported
+2014-02-27 22:53:00,898 root - ERROR - This is an invalid path
+2014-02-27 22:53:01,497 root - ERROR - Values for resize must not be negatives
+2014-02-27 22:53:01,497 root - ERROR - Values for image size are incorrect: 'NoneType' object has no attribute 'size'
+2014-02-27 22:53:02,858 root - ERROR - Degrees have incorrect Values 
+2014-02-27 22:53:02,859 root - ERROR - Degrees have incorrect Values 
+2014-02-27 22:53:02,861 root - ERROR - Format is incorrect or is not supported
+2014-02-27 22:53:02,865 root - INFO - Search has finished succesfully
+2014-02-27 22:53:02,865 root - INFO - Paths were found extracted succesfully 
+2014-02-27 22:53:02,868 root - INFO - Search has finished succesfully
+2014-02-27 22:53:02,875 root - INFO - Paths were found extracted succesfully 
+2014-02-27 22:53:02,880 root - INFO - Search has finished succesfully
+2014-02-27 22:53:02,888 root - INFO - Search has finished succesfully
+2014-02-27 22:53:02,894 root - INFO - Search has finished succesfully
+2014-02-27 22:53:02,895 root - INFO - Paths were found extracted succesfully 
+2014-02-27 22:53:02,907 root - INFO - Search has finished succesfully
+2014-02-27 22:53:02,921 root - INFO - Paths were found extracted succesfully 
+2014-02-27 22:53:02,927 root - INFO - Search has finished succesfully
+2014-02-27 22:53:02,933 root - INFO - Search has finished succesfully
+2014-02-27 22:53:03,065 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:03,178 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:03,482 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:03,783 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:04,141 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:04,256 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:04,378 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:04,548 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:04,684 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:04,704 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:04,859 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:04,980 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:05,141 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:05,163 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:05,187 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:05,236 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:05,272 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:05,410 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:05,538 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:05,700 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:05,716 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:05,730 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:05,773 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:05,801 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:05,947 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:06,270 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:06,631 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:06,786 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:06,947 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:07,167 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:07,339 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:07,454 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:07,759 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:08,115 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:08,243 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:08,362 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:08,526 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:08,664 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:08,845 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:09,191 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:09,539 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:09,703 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:09,858 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:10,059 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:10,234 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:10,250 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:10,382 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:10,496 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:10,648 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:10,670 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:10,717 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:10,749 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:10,766 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:10,901 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:11,035 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:11,207 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:11,233 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:11,290 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:11,332 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:11,385 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:11,592 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:11,793 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:12,023 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:12,086 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:12,145 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:12,223 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:12,255 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:12,428 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:12,575 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:12,765 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:12,803 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:12,842 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:12,917 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:53:12,918 root - INFO - Search has finished succesfully
+2014-02-27 22:53:13,038 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:29,055 root - INFO - List from path operation has finished succesfully
+2014-02-27 22:58:29,059 root - INFO - List from path operation has finished succesfully
+2014-02-27 22:58:29,069 root - INFO - List from path operation has finished succesfully
+2014-02-27 22:58:29,072 root - INFO - List from name operation has finished succesfully
+2014-02-27 22:58:29,075 root - INFO - List from name operation has finished succesfully
+2014-02-27 22:58:29,078 root - INFO - List from name operation has finished succesfully
+2014-02-27 22:58:29,079 root - INFO - List by size operation has finished succesfully
+2014-02-27 22:58:29,085 root - INFO - List by size operation has finished succesfully
+2014-02-27 22:58:29,094 root - INFO - List by size operation has finished succesfully
+2014-02-27 22:58:29,095 root - WARNING - Image is not supported
+2014-02-27 22:58:29,098 root - WARNING - Image is not supported
+2014-02-27 22:58:29,098 root - ERROR - This is an invalid path
+2014-02-27 22:58:29,717 root - ERROR - Values for resize must not be negatives
+2014-02-27 22:58:29,717 root - ERROR - Values for image size are incorrect: 'NoneType' object has no attribute 'size'
+2014-02-27 22:58:31,213 root - ERROR - Degrees have incorrect Values 
+2014-02-27 22:58:31,214 root - ERROR - Degrees have incorrect Values 
+2014-02-27 22:58:31,216 root - ERROR - Format is incorrect or is not supported
+2014-02-27 22:58:31,220 root - INFO - List from path operation has finished succesfully
+2014-02-27 22:58:31,220 root - INFO - Search has finished succesfully
+2014-02-27 22:58:31,221 root - INFO - Paths were found extracted succesfully 
+2014-02-27 22:58:31,226 root - INFO - List from path operation has finished succesfully
+2014-02-27 22:58:31,226 root - INFO - Search has finished succesfully
+2014-02-27 22:58:31,233 root - INFO - Paths were found extracted succesfully 
+2014-02-27 22:58:31,236 root - INFO - List from path operation has finished succesfully
+2014-02-27 22:58:31,237 root - INFO - Search has finished succesfully
+2014-02-27 22:58:31,243 root - INFO - List from path operation has finished succesfully
+2014-02-27 22:58:31,243 root - INFO - Search has finished succesfully
+2014-02-27 22:58:31,247 root - INFO - List by size operation has finished succesfully
+2014-02-27 22:58:31,249 root - INFO - Search has finished succesfully
+2014-02-27 22:58:31,250 root - INFO - Paths were found extracted succesfully 
+2014-02-27 22:58:31,257 root - INFO - List by size operation has finished succesfully
+2014-02-27 22:58:31,259 root - INFO - Search has finished succesfully
+2014-02-27 22:58:31,270 root - INFO - Paths were found extracted succesfully 
+2014-02-27 22:58:31,276 root - INFO - List by size operation has finished succesfully
+2014-02-27 22:58:31,278 root - INFO - Search has finished succesfully
+2014-02-27 22:58:31,283 root - INFO - List by size operation has finished succesfully
+2014-02-27 22:58:31,283 root - INFO - Search has finished succesfully
+2014-02-27 22:58:31,289 root - INFO - List from name operation has finished succesfully
+2014-02-27 22:58:31,424 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:31,562 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:31,880 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:32,219 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:32,595 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:32,726 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:32,862 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:33,059 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:33,210 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:33,236 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:33,401 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:33,552 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:33,736 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:33,763 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:33,792 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:33,855 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:33,894 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:34,058 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:34,174 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:34,341 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:34,354 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:34,369 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:34,411 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:34,440 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:34,609 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:34,946 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:35,319 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:35,482 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:35,648 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:35,848 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:36,030 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:36,165 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:36,457 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:36,792 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:36,907 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:37,019 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:37,181 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:37,312 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:37,464 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:37,825 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:38,183 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:38,338 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:38,493 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:38,700 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:38,882 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:38,901 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:39,046 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:39,174 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:39,358 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:39,385 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:39,440 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:39,471 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:39,493 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:39,647 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:39,779 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:39,963 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:39,994 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:40,062 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:40,107 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:40,158 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:40,375 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:40,559 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:40,789 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:40,848 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:40,904 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:40,986 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:41,017 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:41,177 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:41,309 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:41,489 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:41,523 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:41,559 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:41,631 root - INFO - Comparision operation has finished successfully
+2014-02-27 22:58:41,631 root - INFO - Search has finished succesfully
+2014-02-27 22:58:41,750 root - INFO - Comparision operation has finished successfully

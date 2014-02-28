@@ -1,12 +1,16 @@
 
 import os
+from logger import LoggerManager 
 from PIL import Image
-import ImageChops
+from PIL import ImageChops
 import math, operator
 from constants import *
 from FileManager import FileManager
 
 class SearchDuplicateRootMeanSquare():
+    def __init__(self):
+        global loggerManager
+        loggerManager =  LoggerManager("../source/log/")
 
     def compare_all_images(self, list_images, path_directory):
         """
@@ -37,7 +41,7 @@ class SearchDuplicateRootMeanSquare():
                                     result.append(image_name)
                                     result.append(image_duplicated)
                                     auxiliar.append(image_duplicated)
-
+        loggerManager.info("Search has finished succesfully")
         return result
 
     def root_maean_square(self, image1, image2):
@@ -54,5 +58,6 @@ class SearchDuplicateRootMeanSquare():
         sq = (value * (idx ** 2) for idx, value in enumerate(h))
         sum_of_squares = sum(sq)
         rms = math.sqrt(sum_of_squares / float (image1.size[0] * image1.size[1]))
+        loggerManager.info("Comparision operation has finished successfully")
         return rms
 

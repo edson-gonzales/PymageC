@@ -1,11 +1,15 @@
 from constants import *
 import os
 import sys
+from logger import LoggerManager 
 sys.path.append("..")
 from FileManager import FileManager
 from SearchDuplicate import SearchDuplicate
 
 class SearchDuplicateBySize(SearchDuplicate):
+    def __init__(self):
+        global loggerManager
+        loggerManager =  LoggerManager("../source/log/")
     
     def search_duplicate(self, list_images):
         """
@@ -19,6 +23,7 @@ class SearchDuplicateBySize(SearchDuplicate):
         seen_add = seen.add
         seen_twice = set(x for x in list_images if x in seen or seen_add(x))
         list_images_duplicated = list(seen_twice)
+        loggerManager.info("Search has finished succesfully")
         return list_images_duplicated
 
     def extract_entire_path_of_each_image_duplicated(self, list_images_duplicated, path):
@@ -40,6 +45,7 @@ class SearchDuplicateBySize(SearchDuplicate):
                         size = os.path.getsize(image_name)
                         if (size == image_duplicated):
                             list_images_duplicated_with_paths.append(image_name)
+        loggerManager.info("Paths were found extracted succesfully ")
         return list_images_duplicated_with_paths
 
 

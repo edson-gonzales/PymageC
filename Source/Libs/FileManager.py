@@ -1,8 +1,12 @@
 from constants import *
 import os
+from logger import LoggerManager 
 
 class FileManager():
-   
+    def __init__(self):
+        global loggerManager
+        loggerManager =  LoggerManager("../source/log/")
+
     def get_current_path(self):
         """
         This method returns the current path directory
@@ -31,7 +35,7 @@ class FileManager():
                 image_extension = image.split(".")[-1]
                 if image_extension in types:
                     list_image.append(image)
-
+        loggerManager.info("List from path operation has finished succesfully")
         return list_image           
     
     def list_image_names_with_path_directory(self, current_path):
@@ -52,7 +56,7 @@ class FileManager():
                 if image_extension in types:    
                     image_name_with_path = base + "/" + image
                     list_image.append(image_name_with_path)
-
+        loggerManager.info("List from name operation has finished succesfully")
         return list_image
 
     def list_image_sizes_from_path(self, current_path):
@@ -74,7 +78,7 @@ class FileManager():
                     image_name = base + "/" + image
                     size = os.path.getsize(image_name)
                     list_image_sizes.append(size)
-
+        loggerManager.info("List by size operation has finished succesfully")
         return list_image_sizes
 
     def directory_exists(self, path_directory):
@@ -86,7 +90,9 @@ class FileManager():
         if os.path.isdir(path_directory):
             return path_directory
         else:
-            return "This is an invalid path"
+            loggerManager.error("This is an invalid path")        
+
+  
 
     def validate_type_of_image(self, image_file):
         """
@@ -97,10 +103,15 @@ class FileManager():
                      G:\Pymage Mario\PYMAGE C\Tests\Input\920.jpg
         """
         if os.path.isfile(image_file):
-            image_extension = image_file.split(".")[-1]
-            if image_extension in types:
+            if (image_file.endswith(".jpg") or image_file.endswith(".bmp") 
+                or image_file.endswith(".png")):
                 return True
-        return False
+            else: 
+                loggerManager.warning("Image is not supported")                
+                return False
+        else:
+            loggerManager.warning("Image is not supported")
+            return False
 
 
 

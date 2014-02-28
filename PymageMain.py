@@ -4,9 +4,13 @@ sys.path.append("source/libs")
 from PIL import Image
 from FileManager import FileManager
 from ImageHandler import ImageHandler
+from logger import LoggerManager 
 
 class PymageMain():
-    
+    def __init__(self):
+        global loggerManager
+        loggerManager =  LoggerManager("source/log/")
+
     def read_value_from_user(self, msg_to_display):
         """
         This method displays a custom message to the final user and reads
@@ -38,6 +42,7 @@ class PymageMain():
         image_path.- Path directory of the image that will be processed
         """
         msg_to_display = "Insert the path directory of the image that will be processed: "
+        loggerManager.error(msg_to_display)
         image_path = self.read_value_from_user(msg_to_display)
         return str(image_path)
 
@@ -60,6 +65,7 @@ class PymageMain():
             return degrees
         else:
             return 9999
+            loggerManager.error("Invalid degrees")
 
     def read_name_to_save_image_rotate(self):
         """
@@ -85,6 +91,7 @@ class PymageMain():
         if (image_handler.validate_format_inserted(new_format) == True):
             return new_format
         else:
+            loggerManager.error("Incorrect format")
             return "Incorrect format"
 
     def read_all_values_to_rotate(self):

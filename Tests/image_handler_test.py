@@ -103,3 +103,21 @@ class ImageManagerTest(unittest.TestCase):
         self.assertTrue(self.file_manager.validate_type_of_image(new_image), "The image was not exported to another format")
         os.remove(new_image)
 
+    def test_is_width_and_heigth_of_image_resized(self):
+        image = "/input/pregoneroOficial.jpg"
+        image_path = self.current_path + image
+        width = 100
+        height  = 100
+        new_name = "/input/pregoneroOficial_resize.jpg"
+        new_name_jpg_path = self.current_path + new_name
+        self.assertEquals(self.image_handler.obtain_size(self.image_handler.resize_image(image_path,100,100,new_name_jpg_path)),(100,100))
+
+    def test_input_wrong_values_in_width_and_heigth(self):
+        image = "/input/pregoneroOficial.jpg"
+        image_path = self.current_path + image
+        width = 100
+        height  = 100
+        new_name = "/input/pregoneroOficial_resize.jpg"
+        new_name_jpg_path = self.current_path + new_name
+        self.assertFalse(self.image_handler.obtain_size(self.image_handler.resize_image(image_path,-50,-50,new_name_jpg_path)),(100,100))
+
